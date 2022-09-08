@@ -5,36 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Se añade la etiqueta (style para personalizar el encabezado)-->
+    <style type="text/css">
+
+        body{
+            background: white;
+        }
+       
+        #encabezado ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #encabezado #item{
+            float: left;
+        }
+        
+        #encabezado #separado{
+            float: left;
+        }
+
+        #encabezado #item a{
+            background: rgb(29, 29, 216);
+            color: white;
+            padding: 12px 90px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #encabezado #separado a{
+            background: rgb(29, 29, 216);
+            color: white;
+            display: block;
+            padding: 4px 0px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        #encabezado #submenu{
+            display: none;
+            position: absolute;
+            min-width: 120px;
+        }
+
+        #encabezado #item a:hover{
+            background:rgb(55, 122, 199);
+            color: rgb(173, 223, 247);
+        }
+
+        #encabezado #item:hover #submenu{
+            display: block;
+        }
+
+
+       
+
+    </style>
 </head>
 <body>
-    <header> Diseño de Sitios Web</header>
-    <nav>
-        <ul>    
-            <li> Inicio </li>
-                <ul>
-                    <li> Temas </li>
-                        <ul>
-                            <li> Tema 1 </li>
-                            <li> Tema 2 </li>
-                        </ul>
-                    <li> Recursos Digitales </li>
-                        <ul>
-                            <li> Recurso 1 </li>
-                            <li> Recurso 2 </li>
-                        </ul>
-                    <li> Aprendizaje </li> 
-                        <ul>
-                            <li> Actividad 1 </li>
-                            <li> Actividad 2 </li>
-                        </ul>
-                    <li> Acerca de: </li>
-                        <ul>
-                            <li> Autor </li>
-                        </ul>
+    <!--Se crea un encabezado con titulo, un menu, sub menu y con una cclase llamada encabezado, para añadir estilo al encabezado.-->
+        
+    <nav id="encabezado">
+        <ul>
+            <li id="item"><a href="#">Inicio</a></li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Temas</a>
+                <ul id="submenu">
+                    <li><a href="#">Fundamentos de HTML</a></li>
+                    <li><a href="#">Interacción humano ordenador</a></li>
                 </ul>
-        </ul>
-    </nav> 
-    <section>   Proposito del Sitio: </section>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Recursos Digitales</a>
+                <ul id="submenu">
+                    <li><a href="#">Recurso 1</a></li>
+                    <li><a href="#">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Aprendizaje</a>
+                <ul id="submenu">
+                    <li><a href="#">Actividad 1</a></li>
+                    <li><a href="#">Actividad 2</a></li>
+                </ul>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Acerca de</a>
+                <ul id="submenu">
+                    <li><a href="#">Tutor</a></li>
+                </ul>
+            </li>
+        </ul>   
+    </nav>
+        
+    
+    <section>Proposito del Sitio: </section>
     <p>El proposito de este sitio web es aplicar y demostrar la aplicación de los fundamentos de HTML, ya que con ellas podemos estructurar y desplezar una pagina web. Ademas podremos mejorar el contenido de una pagina web, ya que de esta manera se puede aumentar la interacción que un humano tiene con el ordenador, ademas se vuelve llamativa la experiencia de la pagina y más sencilla la forma de inferir la información que daa a conocer la pagina. </p> <br>
     <article>
         Introducción HTML: <br>
