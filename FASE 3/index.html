@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Se añade la etiqueta (style para personalizar el encabezado)-->
+    <style type="text/css">
+
+        body{
+            background: white;
+        }
+
+        
+        #barrafinal{
+            background: rgb(29, 29, 216);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 4px;
+        }
+       
+        #encabezado ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #encabezado #item{
+            float: left;
+        }
+        
+        #encabezado #separado{
+            float: left;
+        }
+
+        #encabezado #item a{
+            background: rgb(29, 29, 216);
+            color: white;
+            padding: 12px 90px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #encabezado #separado a{
+            background: rgb(29, 29, 216);
+            color: white;
+            display: block;
+            padding: 4px 0px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        #encabezado #submenu{
+            display: none;
+            position: absolute;
+            min-width: 120px;
+        }
+
+        #encabezado #item a:hover{
+            background:rgb(55, 122, 199);
+            color: rgb(173, 223, 247);
+        }
+
+        #encabezado #item:hover #submenu{
+            display: block;
+        }
+
+        #espacio{
+            padding: auto;
+        }
+
+        
+
+
+       
+
+    </style>
+</head>
+<body>
+<!--Se crea un encabezado con titulo, un menu, sub menu y con una cclase llamada encabezado, para añadir estilo al encabezado.-->
+    <header>
+        <h1>Fundamentos de HTML e Interacción Humano Ordenador</h1>
+    </header>
+     <!--Se crea el menu con la etiqueta nav-->   
+    <nav id="encabezado">
+        <ul>
+            <li id="item"><a href="#">Inicio</a></li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Temas</a>
+                <ul id="submenu">
+                    <li><a href="#">Tema 1</a></li>
+                    <li><a href="#">Tema 2</a></li>
+                </ul>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Recursos Digitales</a>
+                <ul id="submenu">
+                    <li><a href="#">Recurso 1</a></li>
+                    <li><a href="#">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Aprendizaje</a>
+                <ul id="submenu">
+                    <li><a href="#">Actividad 1</a></li>
+                    <li><a href="#">Actividad 2</a></li>
+                </ul>
+            </li>
+            <li id="separado"><a href="">|</a></li>
+            <li id="item"><a href="#">Acerca de</a>
+                <ul id="submenu">
+                    <li><a href="#">Tutor</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
+        <br>
+    <section>
+        <br>
+        <br>
+        <hr id="espacio">
+        <h2>Proposito del Sitio:</h2> 
+        <p>El propósito de este sitio web es aplicar y demostrar la aplicación de los fundamentos de HTML, ya que con ellas podemos estructurar y desplegar una página web. Además podremos mejorar el contenido de una página web, ya que de esta manera se puede aumentar la interacción que un humano tiene con el ordenador, por lo tanto se vuelve llamativa la experiencia de la página y más sencilla la forma de inferir la información que se da a conocer. </p>
+    </section>
+    <article>
+        <h2>Introducción HTML: </h2>
+        <p> 
+            "Crear una pagina web es más sencillo de lo que parece. En realidad, cualquiera puede crear o editar una web. No es necesario tener ninguna habilidad especial, ni haber estudiado un máster, para desarrollar paginas web; todo lo que se necesita es una gran voluntad de aprender, la motivación que realmente puedes conseguir, y la paciencia sufiencte para ir avanzando en el proceso de publicación de una web en internet."  Prescott, P. (2015). HTML 5. Babelcube Inc. Tomado del libro HTML5, [texto]. <br>
+            <a href="https://books.google.es/books?hl=es&lr=&id=BuyNCgAAQBAJ&oi=fnd&pg=PT4&dq=Crear+una+pagina+web+es+m%C3%A1s+sencillo+de+lo+que+parece.+En+realidad,+cualquiera+puede+crear+o+editar+una+web.+No+es+necesario+tener+ninguna+habilidad+especial,+ni+haber+estudiado+un+m%C3%A1ster,+para+desarrollar+paginas+web%3B+todo+lo+que+se+necesita+es+una+gran&ots=hnnPXjApk0&sig=6ioCkqiPZC4kcgHzvzV07w4jUxc">Libro HTML 5.</a> <br>
+            <img src="easy.png" alt="html facil" style="width: 500px;"> <br> <br>
+            Copiada de pt.quish.tv, [Imagen].
+        </p> 
+        <h2>Introducción y concepto de interacción humano ordenador:</h2>
+        <p>
+            "La interacción con el ordenador va pasando desde la línea de comandos donde se le daban las órdenes en un lenguaje puramente informático…" <br>
+            "A otras formas más “amigables” como los menús de opciones ó la actual manipulación directa, en la que el usuario tiene la posibilidad de manejar los “objetos” de una forma similar a la que acostumbra en la vida real." Copiado de INTERACCION HOMBRE-ORDENADOR, [texto].<br>
+            <a href="https://web.ua.es/es/gvc/documentos/trabajos-ergonomia-visual/interaccion-hombre-ordenador.pdf">INTERACCION HOMBRE-ORDENADOR</a> <br>
+            <img src="01.png" alt="comandos" style="width: 300px;">
+            <img src="02.png" alt="menus" style="width: 260px;"> <br>
+            Sacadas de INTERACCION HOMBRE-ORDENADOR,[captura de pantalla].
+        </p>
+    </article>
+    <p>
+        <br>
+        <h3>Mockup:</h3>
+        <img src="pagina.png" alt="mockup" style="width: 600px ;">
+    </p>
+    <footer>
+        <p id="barrafinal">
+            Skype tutor: josue8atorres <br>    
+            Fecha actualización: 24/09/2022 
+        </p>
+    </footer>
+
+</body>
+</html>
